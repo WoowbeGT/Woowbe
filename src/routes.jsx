@@ -6,7 +6,7 @@ export const routes = [
         element: <Boda1/>
     }, 
     {
-        path: '/about',
+        path: '/sorteo',
         element: <Boda1/>
     },
     {

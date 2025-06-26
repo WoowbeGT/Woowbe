@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import fondo from '../assets/mujer-png.png';
-import weddingImg from '../assets/wedding.png';
+import bodasss from '../assets/bodasss.png';
 import anillos from '../assets/anillos.png';
 import wooebe from '../assets/wowbe.png';
 import pasos from '../assets/pasos.png';
@@ -22,67 +22,79 @@ export const Boda1 = () => {
           backgroundImage: `url(${textura})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          backgroundRepeat: "",
+          backgroundRepeat: "repeat",
         }}
       />
 
-      <div className="w-full h-[40rem] flex flex-col justify-between items-center bg-black text-white p-4">
-        <div className="text-5xl md:text-5xl lg:text-6xl text-center flex-grow flex items-center justify-center py-40">
-          <h1 className="text-center w-full">
-            <span className="block text-6xl mb-2 font-medium">Mi primer</span>
-            <span className="block text-6xl mb-2 font-thin">Regalo de</span>
-            <span className="block text-8xl font-bold">Bodas</span>
-          </h1>
+      <div className="w-full h-[40rem] flex flex-col justify-between bg-black text-white p-4">
+        <div className="
+          flex-grow flex items-start justify-start w-full
+          md:items-center md:justify-center
+        ">
+          <div className="w-full flex flex-col items-start md:items-center">
+            <h1 className="
+              w-full flex flex-col items-start justify-center text-left
+              md:items-center md:text-center
+              mt-32 md:mt-0
+            ">
+              <span className="block text-6xl mb-2 font-medium">Mi primer</span>
+              <span className="block text-6xl mb-2 font-thin">Regalo de</span>
+              <span className="block text-8xl font-bold">Bodas</span>
+            </h1>
+            <img
+              src={bodasss}
+              alt="Invitación"
+              className="w-[15rem] mt-8 object-cover rounded-md self-start md:self-center"
+            />
+          </div>
         </div>
         <img src={woowbeBlack} alt="Woebe Logo" className="mb-6 w-50 mx-auto" />
       </div>
 
 
       <div
-  className="w-full relative mb-10 overflow-hidden"
-  style={{ aspectRatio: "1 / 1.1" }}
->
-  {/* Imagen de fondo posicionada y movida visualmente hacia la izquierda */}
-<div className="absolute inset-0 overflow-hidden">
-  <img
-    src={fondo}
-    alt="Invitación"
-    className="w-full h-full object-cover translate-x-[-35%]"
-    style={{ zIndex: 7 }}
-  />
-</div>
+        className="w-full relative mb-0 overflow-hidden"
+        style={{ aspectRatio: "1 / 1.1" }}
+      >
+        {/* Imagen de fondo posicionada y movida visualmente hacia la izquierda */}
+        <div className="absolute inset-0 overflow-hidden">
+          <img
+            src={fondo}
+            alt="Invitación"
+            className="w-full h-full object-cover translate-x-[-35%]"
+            style={{ zIndex: 7 }}
+          />
+        </div>
 
-  {/* Overlay blanco translúcido */}
-  <div className="absolute inset-0 bg-white/10 z-10" />
+        {/* Overlay blanco translúcido */}
+        <div className="absolute inset-0 bg-white/10 z-10" />
 
-  {/* Texto encima */}
-  <div className="absolute right-0 top-1/2 -translate-y-1/2 z-20 pr-10 flex flex-col items-end text-right w-full">
-    <span className="block text-xl md:text-2xl lg:text-3xl font-light tracking-[0.15em] text-gray-600 mb-1">
-      LA INVITACIÓN
-    </span>
-    <span className="block text-3xl md:text-4xl lg:text-5xl font-bold tracking-[0.05em] text-gray-800">
-      PERFECTA
-    </span>
-  </div>
-</div>
+        {/* Texto encima */}
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 z-20 pr-10 flex flex-col items-end text-right w-full">
+          <span className="block text-xl md:text-2xl lg:text-3xl font-light tracking-[0.15em] text-gray-600 mb-1">
+            LA INVITACIÓN
+          </span>
+          <span className="block text-3xl md:text-4xl lg:text-5xl font-bold tracking-[0.05em] text-gray-800">
+            PERFECTA
+          </span>
+        </div>
+      </div>
 
+      <div className="w-full flex flex-col items-center mx-auto mb-10 overflow-hidden space-y-8 p-0">
 
-      <div className="w-full flex flex-col items-center mx-auto mb-10 overflow-hidden space-y-8 p-4">
-
+        <div className="fixed left-0 w-screen bg-black py-8 flex justify-center items-center my-none z-10" style={{ position: "relative" }}>
+          <h2 className="text-6xl font-semibold text-center text-white m-0">
+            Junio 30, 2025.
+          </h2>
+        </div>
         <img
           src={anillos}
           alt="Descripción de la imagen"
           className="w-[11rem] mx-auto object-cover rounded-md py-20 pb-none"
         />
         <div className="relative w-full flex flex-col items-center">
-            <h2 className="text-5xl font-bold text-center text-black z-10 m-0">
-              SAVE THE DATE.
-            </h2>
-        </div>
-
-        <div className="fixed left-0 w-screen bg-black py-8 flex justify-center items-center my-4 z-10" style={{ position: "relative" }}>
-          <h2 className="text-6xl font-semibold text-center text-white m-0">
-            Junio 30, 2025.
+          <h2 className="text-5xl font-bold text-center text-black z-10 m-0">
+            SAVE THE DATE.
           </h2>
         </div>
         <hr />
@@ -114,10 +126,10 @@ export const Boda1 = () => {
       <div className="w-full flex flex-col items-center mx-auto mb-10 overflow-hidden space-y-8 p-4">
         <div className="fixed left-0 w-screen bg-black py-8 flex justify-center items-center my-4 z-10" style={{ position: "relative" }}>
           <img
-          src={pasos}
-          alt="Descripción de la imagen"
-          className="w-[25rem] mx-auto object-cover rounded-md"
-        />
+            src={pasos}
+            alt="Descripción de la imagen"
+            className="w-[25rem] mx-auto object-cover rounded-md"
+          />
         </div>
         <div className="text-center px-4 font-thin mt-15 " >
           <h3 className="text-3xl mb-4 " >Participar es muy fácil:</h3>
